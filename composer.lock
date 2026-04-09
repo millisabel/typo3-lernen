@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a751fdadce06bf32e23bd53515ca93ba",
+    "content-hash": "8f68dde9f254ad1417998f5d9a4dd706",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -2119,6 +2119,36 @@
                 "source": "https://github.com/ralouphie/getallheaders/tree/develop"
             },
             "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
+            "name": "sitepackage/sitepackage",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "./packages/sitepackage",
+                "reference": "6a5ec4fb90660c58023550a9bc9aa8d4ed40e3a9"
+            },
+            "require": {
+                "typo3/cms-core": "^13.4"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "sitepackage"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Sitepackage\\": "Classes/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Sitepackage",
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "symfony/cache",
@@ -7032,7 +7062,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "sitepackage/sitepackage": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {},
