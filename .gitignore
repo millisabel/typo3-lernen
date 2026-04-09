@@ -1,0 +1,41 @@
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+nbproject/
+
+# DDEV (локальная среда)
+.ddev/
+
+# TYPO3 runtime
+/var/*
+!/var/labels
+
+/public/typo3temp/
+/public/_assets/
+
+# Fileadmin (контент)
+/public/fileadmin/*
+!/public/fileadmin/.gitkeep
+!/public/fileadmin/.htaccess
+!/public/fileadmin/index.html
+!/public/fileadmin/.gitignore
+
+# Logs
+*.log
+
+# Env
+.env
+.env.local
+
+# Node / build
+/node_modules/
+/public/build/
+
+# Composer
+/vendor/
+
+# Keep required public files
+!/public/index.php
+!/public/.htaccess
