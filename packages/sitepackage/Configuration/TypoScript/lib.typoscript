@@ -1,0 +1,2 @@
+lib.test = TEXT
+lib.test.value = Hello from lib
