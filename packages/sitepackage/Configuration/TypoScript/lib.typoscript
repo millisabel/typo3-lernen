@@ -1,2 +1,2 @@
-lib.test = TEXT
-lib.test.value = Hello from lib
+lib.message = TEXT
+lib.message.value = FROM LIB

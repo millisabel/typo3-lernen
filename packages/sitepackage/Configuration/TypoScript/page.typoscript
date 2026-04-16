@@ -1,3 +1,3 @@
 page = PAGE
-page.10 = TEXT
-page.10.value = Page from page.typoscript
+page.10 < lib.message
+page.10.value = FROM PAGE
