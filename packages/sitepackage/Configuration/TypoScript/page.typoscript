@@ -1,7 +1,7 @@
 page = PAGE
 page.10 = FLUIDTEMPLATE
 page.10 {
-  templateName = Default
+  templateName = Page/Default
 
   templateRootPaths {
     10 = EXT:sitepackage/Resources/Private/Templates/
@@ -14,4 +14,9 @@ page.10 {
   partialRootPaths {
     10 = EXT:sitepackage/Resources/Private/Partials/
   }
+
+  variables {
+    title < lib.title
+  }
 }
+

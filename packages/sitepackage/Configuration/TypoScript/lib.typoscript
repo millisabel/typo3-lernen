@@ -1,2 +1,2 @@
-lib.message = TEXT
-lib.message.value = FROM LIB
+lib.title = TEXT
+lib.title.value = Hello from TypoScript
