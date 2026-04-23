@@ -1,22 +1,34 @@
 page = PAGE
-page.10 = FLUIDTEMPLATE
-page.10 {
-  templateName = Page/Default
+page {
+    10 = FLUIDTEMPLATE
+    10 {
+        templateName = Page/Default
 
-  templateRootPaths {
-    10 = EXT:sitepackage/Resources/Private/Templates/
-  }
+        templateRootPaths {
+            10 = EXT:sitepackage/Resources/Private/Templates/
+        }
 
-  layoutRootPaths {
-    10 = EXT:sitepackage/Resources/Private/Layouts/
-  }
+        layoutRootPaths {
+            10 = EXT:sitepackage/Resources/Private/Layouts/
+        }
 
-  partialRootPaths {
-    10 = EXT:sitepackage/Resources/Private/Partials/
-  }
+        partialRootPaths {
+            10 = EXT:sitepackage/Resources/Private/Partials/
+        }
 
-  variables {
-    title < lib.title
-  }
+        variables {
+            title < lib.title
+        }
+    }
+
+    includeCSS {
+        main = EXT:sitepackage/Resources/Public/Css/main.css
+    }
+
+    includeJSFooter {
+        menu = EXT:sitepackage/Resources/Public/JavaScript/modules/menu.js
+        slider = EXT:sitepackage/Resources/Public/JavaScript/modules/slider.js
+        main = EXT:sitepackage/Resources/Public/JavaScript/main.js
+    }
 }
 
